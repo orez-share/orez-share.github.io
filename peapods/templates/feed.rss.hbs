@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Peapod Crosswords</title>
+    <link>https://orez-share.github.io/peapods/</link>
+    <description>Feed of peapod crosswords: crosswords where each cell contains a 2-letter rebus. Updates sporadically!</description>
+    <language>en-us</language>
+    {{#each peapods}}
+    <item>
+      <title>🫛 {{this.title}}</title>
+      <link>{{this.link}}</link>
+    </item>
+    {{/each}}
+  </channel>
+</rss>

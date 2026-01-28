@@ -1,0 +1,169 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="title" content="🫛 Peapod Crosswords" />
+    <meta name="description" content="Learn about and play peapod crosswords: crosswords where each cell contains a 2-letter rebus." />
+    <meta name="robots" content="noindex" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://orez-share.github.io/peapods/" />
+    <meta property="og:title" content="🫛 Peapod Crosswords" />
+    <meta property="og:description" content="Learn about and play peapod crosswords: crosswords where each cell contains a 2-letter rebus." />
+    <meta property="og:image" content="https://orez-share.github.io/peapods/peapod-logo.png" />
+    <meta property="og:image:alt" content="Peapod logo: the words PEAPOD and CROSSWORDS set into a larger peapod crossword. Each cell contains two letters." />
+    <meta property="og:image:width" content="198" />
+    <meta property="og:image:height" content="103" />
+
+    <link rel="alternate" type="application/rss+xml" title="Peapod Feed" href="feed.rss" />
+
+    <style>
+      td {
+        padding-right: 10px;
+      }
+
+      .content {
+        width: 800px;
+        background-color: #ffffe0;
+        padding: 20px;
+        box-shadow: 2.5px 5.0px 5.0px hsl(0deg 0% 0% / 0.42);
+      }
+
+      .header {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        margin-bottom: 30px;
+      }
+
+      .header a {
+        font-size: 2em;
+        font-family: Arial;
+        font-weight: bold;
+        text-decoration: none !important;
+        color: inherit;
+        text-align: center;
+        height: 100%;
+        align-content: center;
+      }
+
+      .header a span {
+        position: relative;
+      }
+
+      .header a:hover span::before {
+        content: "🫛 ";
+        position: absolute;
+        left: calc(-1em - 5px);
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      body {
+        font-family: sans-serif;
+        background-color: #999;
+        display: grid;
+        place-items: center;
+      }
+
+      h2 {
+        margin-top: 50px;
+      }
+
+      table {
+        margin-bottom: 20px;
+      }
+
+      .meta-preview {
+        width: 400px;
+        display: grid;
+        grid-template-columns: 1fr min-content;
+        background-color: #f8f8c8;
+        border: 1px solid #e8e8b0;
+        border-left: 6px solid #e8e8b0;
+        padding: 10px;
+      }
+
+      .meta-preview .title {
+        padding-bottom: 10px;
+      }
+
+      .meta-preview > div > * {
+        display: inline-block;
+      }
+
+      .meta-preview a {
+        font-weight: bold;
+      }
+
+      .meta-preview img {
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="header">
+        <img srcset="./peapod-logo.png 2x" />
+        <a class="header-button" href="#play"><span>Play</span></a>
+        <a class="header-button" href="#construct">
+          <span>Construct</span>
+        </a>
+        <a class="header-button" href="#what"><span>What?</span></a>
+      </div>
+
+      <div class="main">
+        <h2 id="what">What is a Peapod?</h2>
+        <p>
+          In a traditional crossword, each cell contains a single letter, and you read the fill cellwise left to right and top to bottom.
+        </p>
+        <p>
+          A <strong>peapod crossword</strong> (or just "<strong>peapod</strong>") is a crossword puzzle where each cell contains <strong>two letters</strong>.
+          Otherwise, it's exactly like a traditional crossword!
+        </p>
+
+        <h2 id="play">Play</h2>
+        <p>
+          A collection of peapods I've created. If you're using the linked player, hold Shift to enter multiple letters into a single cell.
+        </p>
+        <table>
+          {{#each peapods}}
+          <tr>
+            <td class="date">{{this.pub_date}}</td>
+            <td class="title">{{this.title}}</td>
+            <td>
+              <a href="{{this.link}}">[play]</a>
+              <a href="./puz/{{this.download}}">[download]</a>
+            </td>
+          </tr>
+          {{/each}}
+        </table>
+
+        There's even an <a href="feed.rss">RSS feed</a>!
+
+        <h2 id="construct">Construct</h2>
+        <p>
+          If you're interested in creating your own peapod, you can use the Peapod Crossword Setter:
+        </p>
+        <div class="meta-preview">
+          <div>
+            <a class="title" href="https://orez-share.github.io/peapod-setter">🫛 Peapod Crossword Setter</a>
+            <div class="description">
+              A tool for setting peapod crosswords: crosswords where each cell contains 2-letter rebus.
+            </div>
+          </div>
+          <img srcset="https://orez-share.github.io/peapod-setter/sample.gif 4x" />
+        </div>
+        <p>
+          The Peapod Crossword Setter allows for shaping a grid, suggesting potential fills, and exporting the result as a standard .ipuz file, which can be shared and run in your crossword solving tool of choice.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

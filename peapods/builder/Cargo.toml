@@ -1,0 +1,9 @@
+[package]
+name = "peapod-site-builder"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+handlebars = { version = "6.4.0", features = ["dir_source"] }
+serde = { version = "1.0.228", features = ["serde_derive"] }
+serde_yaml = "0.9.34"
