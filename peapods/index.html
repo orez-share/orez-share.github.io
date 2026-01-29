@@ -1,0 +1,177 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      td {
+        padding-right: 10px;
+      }
+
+      .content {
+        width: 800px;
+        background-color: #ffffe0;
+        padding: 20px;
+        box-shadow: 2.5px 5.0px 5.0px hsl(0deg 0% 0% / 0.42);
+      }
+
+      .header {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        margin-bottom: 30px;
+      }
+
+      .header a {
+        font-size: 2em;
+        font-family: Arial;
+        font-weight: bold;
+        text-decoration: none !important;
+        color: inherit;
+        text-align: center;
+        height: 100%;
+        align-content: center;
+      }
+
+      .header a span {
+        position: relative;
+      }
+
+      .header a:hover span::before {
+        content: "🫛 ";
+        position: absolute;
+        left: calc(-1em - 5px);
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      body {
+        font-family: sans-serif;
+        background-color: #999;
+        display: grid;
+        place-items: center;
+      }
+
+      h2 {
+        margin-top: 50px;
+      }
+
+      .meta-preview {
+        width: 400px;
+        display: grid;
+        grid-template-columns: 1fr min-content;
+        background-color: #f8f8c8;
+        border: 1px solid #e8e8b0;
+        border-left: 6px solid #e8e8b0;
+        padding: 10px;
+      }
+
+      .meta-preview .title {
+        padding-bottom: 10px;
+      }
+
+      .meta-preview > div > * {
+        display: inline-block;
+      }
+
+      .meta-preview a {
+        font-weight: bold;
+      }
+
+      .meta-preview img {
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="header">
+        <img srcset="./peapod-logo.png 2x" />
+        <a class="header-button" href="#play"><span>Play</span></a>
+        <a class="header-button" href="#construct">
+          <span>Construct</span>
+        </a>
+        <a class="header-button" href="#what"><span>What?</span></a>
+      </div>
+
+      <div class="main">
+        <h2 id="what">What is a Peapod?</h2>
+        <p>
+          In a traditional crossword, each cell contains a single letter, and you read the fill cellwise left to right and top to bottom.
+        </p>
+        <p>
+          A <strong>peapod crossword</strong> (or just "<strong>peapod</strong>") is a crossword puzzle where each cell contains <strong>two letters</strong>.
+          Otherwise, it's exactly like a traditional crossword!
+        </p>
+
+        <h2 id="play">Play</h2>
+        <p>
+          A collection of peapods I've created. If you're using the linked player, hold Shift to enter multiple letters into a single cell.
+        </p>
+        <table>
+          <tr>
+            <td class="date">2023-08-13</td>
+            <td class="title">Pair Off</td>
+            <td>
+              <a href="https://www.crosswithfriends.com/beta/play/100003203">[play]</a>
+              <a href="./puz/Pair Off.puz">[download]</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="date">2026-01-16</td>
+            <td class="title">Themeless Peapod 1</td>
+            <td>
+              <a>[play]</a>
+              <a>[download]</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="date">2026-01-25</td>
+            <td class="title">A Bug's Life</td>
+            <td>
+              <a href="https://www.crosswithfriends.com/beta/play/100003610">[play]</a>
+              <a href="./puz/A Bugs Life.puz">[download]</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="date">2026-01-27</td>
+            <td class="title">Twinst</td>
+            <td>
+              <a href="https://www.crosswithfriends.com/beta/play/100003701">[play]</a>
+              <a href="./puz/Twinst.puz">[download]</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="date">2026-01-28</td>
+            <td class="title">You Are Here!</td>
+            <td>
+              <a>[play]</a>
+              <a>[download]</a>
+            </td>
+          </tr>
+        </table>
+
+        <h2 id="construct">Construct</h2>
+        <p>
+          If you're interested in creating your own peapod, you can use the Peapod Crossword Setter:
+        </p>
+        <div class="meta-preview">
+          <div>
+            <a class="title" href="https://orez-share.github.io/peapod-setter">🫛 Peapod Crossword Setter</a>
+            <div class="description">
+              A tool for setting peapod crosswords: crosswords where each cell contains 2-letter rebus.
+            </div>
+          </div>
+          <img srcset="https://orez-share.github.io/peapod-setter/sample.gif 4x" />
+        </div>
+        <p>
+          The Peapod Crossword Setter allows for shaping a grid, suggesting potential fills, and exporting the result as a standard .puz file, which can be shared and run in your crossword solving tool of choice.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
