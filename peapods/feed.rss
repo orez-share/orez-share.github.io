@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Peapod Crosswords</title>
+    <link>https://orez-share.github.io/peapods/</link>
+    <description>Feed of peapod crosswords: crosswords where each cell contains a 2-letter rebus. Updates sporadically!</description>
+    <language>en-us</language>
+    <item>
+      <title>🫛 No Relation</title>
+      <link>https://www.crosswithfriends.com/beta/play/100005545</link>
+    </item>
+    <item>
+      <title>🫛 Themeless Peapod 2</title>
+      <link>https://www.crosswithfriends.com/beta/play/100005003</link>
+    </item>
+    <item>
+      <title>🫛 You Are Here!</title>
+      <link>https://www.crosswithfriends.com/beta/play/100004002</link>
+    </item>
+    <item>
+      <title>🫛 Twinst</title>
+      <link>https://www.crosswithfriends.com/beta/play/100003701</link>
+    </item>
+    <item>
+      <title>🫛 A Bug&#x27;s Life</title>
+      <link>https://www.crosswithfriends.com/beta/play/100003610</link>
+    </item>
+    <item>
+      <title>🫛 Themeless Peapod 1</title>
+      <link>https://www.crosswithfriends.com/beta/play/100004003</link>
+    </item>
+    <item>
+      <title>🫛 Pair Off</title>
+      <link>https://www.crosswithfriends.com/beta/play/100003203</link>
+    </item>
+  </channel>
+</rss>
