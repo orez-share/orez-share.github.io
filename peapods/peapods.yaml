@@ -33,3 +33,18 @@ peapods:
     pub_date: "2026-03-11"
     link: "https://www.crosswithfriends.com/beta/play/100005545"
     download: NoRelation.ipuz
+
+  - title: Themeless Peapod 3
+    pub_date: "2026-03-25"
+    link: "https://www.crosswithfriends.com/beta/play/100006097"
+    download: ThemelessPeapod3.ipuz
+
+  - title: Dramatic Crossroads
+    pub_date: "2026-03-29"
+    link: "https://www.crosswithfriends.com/beta/play/100006253"
+    download: DramaticCrossroads.ipuz
+
+  - title: "Threepod (April Fools!)"
+    pub_date: "2026-04-01"
+    link: "https://www.crosswithfriends.com/beta/play/100006290"
+    download: Threepod.ipuz
