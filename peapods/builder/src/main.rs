@@ -4,7 +4,9 @@ use handlebars::{Context, DirectorySourceOptionsBuilder, Handlebars};
 use std::fs::File;
 use std::process::Command;
 
-const BUILD_DIR: &str = "../gh-pages";
+// TODO: really we want `${REPO_ROOT}/gh-pages`.
+// getting this sounds like a pain.
+const BUILD_DIR: &str = "../../gh-pages";
 
 #[derive(serde::Deserialize, serde::Serialize)]
 struct PeapodMeta {
@@ -21,7 +23,7 @@ struct PeapodData {
 
 fn setup_build_dir() {
     let out = Command::new("git")
-        .args(["worktree", "add", BUILD_DIR, "main"])
+        .args(["worktree", "add", BUILD_DIR, "gh-pages"])
         .output()
         .unwrap();
     // `worktree add` fails with 128 when it already exists.
@@ -55,5 +57,5 @@ fn main() {
     peapods.peapods.reverse(); // I don't know why I keep using Handlebars
     render_template("feed.rss", Context::wraps(&peapods).unwrap());
 
-    println!("\nRendered to `../gh-pages`! Don't forget to:\n- Add the .ipuz file for download\n- Commit and push!");
+    println!("\nRendered to `/gh-pages`! Don't forget to:\n- Add the .ipuz file for download\n- Commit and push!");
 }
