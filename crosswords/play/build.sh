@@ -24,7 +24,7 @@ cp -r "${APP_DIR}/build"/* "$PAGE_PATH"
 
 # Also remove the test xwords
 pushd "${PAGE_PATH}"
-rm -rf "/puz"
+rm -rf "puz"
 
 # Commit, but don't push
 git add .
