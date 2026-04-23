@@ -1,5 +1,7 @@
 set -euxo pipefail
 shopt -s dotglob
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+cd "${SCRIPT_DIR}"
 PROJECT_DIR=$( git rev-parse --show-toplevel )
 cd "${PROJECT_DIR}"
 
