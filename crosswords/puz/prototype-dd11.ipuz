@@ -1,9 +1,10 @@
 {
   "version": "http://ipuz.org/v1",
   "kind": [
-    "http://ipuz.org/crossword#1"
+    "http://ipuz.org/crossword#1",
+    "https://orez-share.github.io/crosswords/looping/format"
   ],
-  "title": "🍩 Oh Christ - Prototype",
+  "title": "Oh Christ - Prototype",
   "copyright": "",
   "author": "Orez",
   "notes": "",
