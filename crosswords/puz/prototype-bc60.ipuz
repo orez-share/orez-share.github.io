@@ -1,4 +1,4 @@
-{"version":"http://ipuz.org/v1","kind":["http://ipuz.org/crossword#1","https://orez-share.github.io/crosswords/looping/format"],"title":"Prototype 6x0","copyright":"","author":"Orez","notes":"","dimensions":{"width":11,"height":12},"tessellation":{"x":6,"y":0},"block":"#","empty":0,
+{"version":"http://ipuz.org/v1","kind":["http://ipuz.org/crossword#1","https://orez-share.github.io/crosswords/looping/format"],"title":"Looping Themeless 1 - 6x0","copyright":"","author":"Orez","notes":"","dimensions":{"width":11,"height":12},"tessellation":{"x":6,"y":0},"block":"#","empty":0,
 "puzzle":[
   [{"cell":0},{"cell":0},{"cell":1},{"cell":0},{"cell":0},"#","#",{"cell":2},{"cell":0},{"cell":0},{"cell":0}],
   [{"cell":0},{"cell":0},{"cell":0},{"cell":0},{"cell":0},"#","#",{"cell":3},{"cell":0},{"cell":0},{"cell":0}],
@@ -26,7 +26,7 @@
     [11,"Vocalist Eartha"],
     [12,"Elphie's younger sister, in \"Wicked\""],
     [14,"Utmost"],
-    [15,"Emerald, ruby or amethyst, e.g."],
+    [15,"Emerald, ruby, or amethyst, e.g."],
     [16,"Gives up, as land"],
     [20,"Hopping Easter animal"],
     [22,"Hgt. above sea level"],
