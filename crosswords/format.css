@@ -1,0 +1,43 @@
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  font-family: sans-serif;
+  width: 800px;
+  line-height: 1.2em;
+  padding-bottom: 50px;
+}
+
+h2 {
+  margin-top: 30px;
+}
+
+code {
+  display: inline;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 1em;
+}
+
+code.field {
+  background-color: #eff;
+  padding: 0.5em;
+  border: 1px solid #aaa;
+  margin: 0;
+  font-weight: bold;
+}
+
+.fields-grid {
+  display: grid;
+  margin-left: 30px;
+  grid-template-columns: auto 1fr;
+  grid-gap: 10px;
+}

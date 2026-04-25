@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/crosswords/format.css">
+  </head>
+  <body>
+    <h1>Peapod Crossword .ipuz Format</h1>
+    <p>
+      A <a href="..">peapod crossword</a> is a crossword puzzle where each cell contains two letters.
+    </p>
+    <p>
+      Peapods use <a href="https://libipuz.org/ipuz-spec.html">the .ipuz file format</a> for crosswords.
+      Peapods are entirely compatible with any crossword solving software that supports rebuses.
+      However, the process for entering a rebus tends to require more thought and keypresses than simply typing an answer.
+      Solving software that is aware of peapods may wish to adjust its presentation accordingly, eg to not advance the cursor until the cell contains the expected letter count.
+    </p>
+    <h2 id="kind-field"><code>kind</code> Field</h2>
+    <p>The <code>kind</code> field must be an array containing the following values, in this order:</p>
+    <ul>
+      <li><code>"http://ipuz.org/crossword#1"</code></li>
+      <li><code>"https://orez-share.github.io/peapods/format"</code></li>
+    </ul>
+    <p>
+      This allows software that is not aware of peapods to fall back as a regular crossword.
+      The <code>kind</code> array MAY contain other values if the puzzle contains other variant rules.
+    </p>
+
+    <h2 id="new-fields">New Field</h2>
+    <p>The peapod format has no required fields and only one optional field:</p>
+    <div class="fields-grid">
+      <code class="field">"lettersPerCell"</code>
+      <div>
+        Number of letters per cell. If omitted, defaults to 2.
+      </div>
+    </div>
+  </body>
+</html>

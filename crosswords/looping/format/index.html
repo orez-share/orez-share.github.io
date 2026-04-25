@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      .box {
+        background-color: #ddd;
+        padding: 10px;
+        width: 504px;
+        margin-left: 30px;
+      }
+
+      .caption {
+        margin-top: 10px;
+      }
+    </style>
+    <link rel="stylesheet" href="/crosswords/format.css">
+  </head>
+  <body>
+    <h1>Looping Crossword .ipuz Format</h1>
+    <p>
+      A looping crossword is a crossword puzzle where the edges of the crossword do not terminate clues: instead the clues loop over to the other side of the crossword.
+    </p>
+    <p>
+      Looping crosswords use <a href="https://libipuz.org/ipuz-spec.html">the .ipuz file format</a> for crosswords, with the following additions and considerations.
+    </p>
+    <h2 id="kind-field"><code>kind</code> Field</h2>
+    <p>The <code>kind</code> field must be an array containing the following values, in this order:</p>
+    <ul>
+      <li><code>"http://ipuz.org/crossword#1"</code></li>
+      <li><code>"https://orez-share.github.io/crosswords/looping/format"</code></li>
+    </ul>
+
+    <p>
+      This allows software that is not aware of looping crosswords to fall back as a regular crossword.
+      The <code>kind</code> array MAY contain other values if the puzzle contains other variant rules.
+    </p>
+
+    <h2 id="new-fields">New Fields</h2>
+    <div class="fields-grid">
+      <code class="field">"tessellation": { "x", "y" }</code>
+      <div>
+        The offset of the tessellation loop. This field is required.
+        <ul>
+          <li><code>x</code> must be an integer in the range <code>[0, dimensions.width)</code>.</li>
+          <li><code>y</code> must be an integer in the range <code>[0, dimensions.height)</code>.</li>
+        </ul>
+      </div>
+      <code class="field">"viewport": { "width", "height" }</code>
+      <div>
+        The dimensions of grid cells to display.
+        If omitted, this field will default to the values from <code>dimensions</code>.
+      </div>
+    </div>
+
+    <h2 id="grid">Grid Representation</h2>
+    <p>
+      When <code>tessellation</code>'s <code>x</code> and <code>y</code> values are both nonzero,
+      the <code>x</code> by <code>y</code> area at the bottom right of the grid representation will logically be identical to the cells in the top left of the grid.
+    </p>
+
+    <div class="box">
+      <img srcset="knot-big.png 2x">
+      <div class="caption">
+        Depiction of a 5x5 looping crossword with a 2x3 tessellation offset.
+        The green area denotes the unique grid, and the yellow area at the bottom right denotes the overlap area resulting from the tessellation offset. In grid representations in the .ipuz file, the yellow region must match the top left of the green region.
+      </div>
+    </div>
+
+    <p>
+      Technically this means that it's representationally redundant to define the region of <code>x</code> by <code>y</code> cells at the bottom right.
+      Despite this, all <code>dimensions.width</code> by <code>dimensions.height</code> cells MUST be defined, and they MUST logically match any duplicates.
+      That is, the top left <code>x</code> by <code>y</code> cells must be identical to the bottom right <code>x</code> by <code>y</code> cells.
+      This is to enable compatibility with traditional crossword solving tools.
+    </p>
+    <p>
+      This rule applies to all fields representing the grid, including <code>puzzle</code> and <code>solution</code>.
+    </p>
+  </body>
+</html>
