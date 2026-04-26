@@ -1,0 +1,65 @@
+crosswords:
+  - title: Pair Off
+    pub_date: "2023-08-13"
+    mirror: "https://www.crosswithfriends.com/beta/play/100003203"
+    download: "Pair Off.puz"
+    variants: ["peapod"]
+
+  - title: Themeless Peapod 1
+    pub_date: "2026-01-16"
+    mirror: "https://www.crosswithfriends.com/beta/play/100004003"
+    download: ThemelessPeapod1.ipuz
+    variants: ["peapod"]
+
+  - title: A Bug's Life
+    pub_date: "2026-01-25"
+    mirror: "https://www.crosswithfriends.com/beta/play/100003610"
+    download: "A Bugs Life.puz"
+    variants: ["peapod"]
+
+  - title: Twinst
+    pub_date: "2026-01-27"
+    mirror: "https://www.crosswithfriends.com/beta/play/100003701"
+    download: Twinst.puz
+    variants: ["peapod"]
+
+  - title: You Are Here!
+    pub_date: "2026-01-28"
+    mirror: "https://www.crosswithfriends.com/beta/play/100004002"
+    download: YouAreHere.ipuz
+    variants: ["peapod"]
+
+  - title: Themeless Peapod 2
+    pub_date: "2026-02-27"
+    mirror: "https://www.crosswithfriends.com/beta/play/100005003"
+    download: ThemelessPeapod2.ipuz
+    variants: ["peapod"]
+
+  - title: No Relation
+    pub_date: "2026-03-11"
+    mirror: "https://www.crosswithfriends.com/beta/play/100005545"
+    download: NoRelation.ipuz
+    variants: ["peapod"]
+
+  - title: Themeless Peapod 3
+    pub_date: "2026-03-25"
+    mirror: "https://www.crosswithfriends.com/beta/play/100006097"
+    download: ThemelessPeapod3.ipuz
+    variants: ["peapod"]
+
+  - title: Dramatic Crossroads
+    pub_date: "2026-03-29"
+    mirror: "https://www.crosswithfriends.com/beta/play/100006253"
+    download: DramaticCrossroads.ipuz
+    variants: ["peapod"]
+
+  - title: "Threepod (April Fools!)"
+    pub_date: "2026-04-01"
+    mirror: "https://www.crosswithfriends.com/beta/play/100006290"
+    download: Threepod.ipuz
+    variants: ["peapod"]
+
+  - title: "Looping Themeless 1"
+    pub_date: "2026-04-25"
+    download: prototype-bc60.ipuz
+    variants: ["looping"]

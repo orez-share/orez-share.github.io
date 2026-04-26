@@ -1,0 +1,11 @@
+<table>
+{{#each crosswords}}
+  <tr>
+    <td class="date">{{this.pub_date}}</td>
+    <td class="title">{{this.title}}</td>
+    <td>{{#if this.link}}<a href="{{this.link}}">[play]</a>{{/if}}</td>
+    <td>{{#if this.mirror}}<a href="{{this.mirror}}">[mirror]</a>{{/if}}</td>
+    <td><a href="/crosswords/puz/{{this.download}}">[download]</a></td>
+  </tr>
+{{/each}}
+</table>

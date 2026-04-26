@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>{{title}}</title>
+    <link>{{link}}</link>
+    <description>{{description}}</description>
+    <language>en-us</language>
+    {{#each crosswords}}
+    <item>
+      <title>🫛 {{this.title}}</title>
+      <link>{{this.play_link}}</link>
+    </item>
+    {{/each}}
+  </channel>
+</rss>

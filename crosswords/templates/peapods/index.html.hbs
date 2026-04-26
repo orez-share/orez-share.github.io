@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -15,95 +16,13 @@
     <meta property="og:image:width" content="198" />
     <meta property="og:image:height" content="103" />
 
+    <title>🫛 Peapod Crosswords</title>
     <link rel="alternate" type="application/rss+xml" title="Peapod Feed" href="feed.rss" />
+    <link rel="stylesheet" href="/yellow-box.css">
 
     <style>
-      td {
-        padding-right: 10px;
-      }
-
-      .content {
-        width: 800px;
-        background-color: #ffffe0;
-        padding: 20px;
-        box-shadow: 2.5px 5.0px 5.0px hsl(0deg 0% 0% / 0.42);
-      }
-
-      .header {
-        display: grid;
-        grid-auto-flow: column;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        margin-bottom: 30px;
-      }
-
-      .header a {
-        font-size: 2em;
-        font-family: Arial;
-        font-weight: bold;
-        text-decoration: none !important;
-        color: inherit;
-        text-align: center;
-        height: 100%;
-        align-content: center;
-      }
-
-      .header a span {
-        position: relative;
-      }
-
       .header a:hover span::before {
         content: "🫛 ";
-        position: absolute;
-        left: calc(-1em - 5px);
-      }
-
-      a {
-        text-decoration: none;
-      }
-
-      a:hover {
-        text-decoration: underline;
-      }
-
-      body {
-        font-family: sans-serif;
-        background-color: #999;
-        display: grid;
-        place-items: center;
-      }
-
-      h2 {
-        margin-top: 50px;
-      }
-
-      table {
-        margin-bottom: 20px;
-      }
-
-      .meta-preview {
-        width: 400px;
-        display: grid;
-        grid-template-columns: 1fr min-content;
-        background-color: #f8f8c8;
-        border: 1px solid #e8e8b0;
-        border-left: 6px solid #e8e8b0;
-        padding: 10px;
-      }
-
-      .meta-preview .title {
-        padding-bottom: 10px;
-      }
-
-      .meta-preview > div > * {
-        display: inline-block;
-      }
-
-      .meta-preview a {
-        font-weight: bold;
-      }
-
-      .meta-preview img {
-        float: right;
       }
     </style>
   </head>
@@ -132,18 +51,7 @@
         <p>
           A collection of peapods I've created. If you're using the linked player, hold Shift to enter multiple letters into a single cell.
         </p>
-        <table>
-          {{#each peapods}}
-          <tr>
-            <td class="date">{{this.pub_date}}</td>
-            <td class="title">{{this.title}}</td>
-            <td>
-              <a href="{{this.link}}">[play]</a>
-              <a href="../crosswords/puz/{{this.download}}">[download]</a>
-            </td>
-          </tr>
-          {{/each}}
-        </table>
+        {{>crosswords-list}}
 
         There's even an <a href="feed.rss">RSS feed</a>!
 
@@ -161,8 +69,9 @@
           <img srcset="https://orez-share.github.io/peapod-setter/sample.gif 4x" />
         </div>
         <p>
-          The Peapod Crossword Setter allows for shaping a grid, suggesting potential fills, and exporting the result as a standard .ipuz file, which can be shared and run in your crossword solving tool of choice.
+          The Peapod Crossword Setter allows for shaping a grid, suggesting potential fills, and exporting the result as an .ipuz file, which can be shared and run in your crossword solving tool of choice.
         </p>
+        <p>If you'd prefer to set a peapod by hand, you may instead view the <a href="format">peapod format spec</a>.</p>
       </div>
     </div>
   </body>
