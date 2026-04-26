@@ -1,6 +1,6 @@
 // `unwrap` more, why don't you
 use std::path::PathBuf;
-use handlebars::{Context, DirectorySourceOptionsBuilder, Handlebars};
+use handlebars::{Context, DirectorySourceOptionsBuilder, Handlebars, handlebars_helper};
 use std::fs::File;
 use std::process::Command;
 
@@ -21,12 +21,13 @@ struct CrosswordMeta {
     pub_date: String,
     link: Option<String>,
     mirror: Option<String>,
+    download: String,
+    variants: Vec<CrosswordVariant>,
+
     // XXX: if we're doing crap like this we should really have separate ser and deser structs,
     // but we can rebuild that bridge once we exceed the weight limit.
     #[serde(skip_deserializing)]
     play_link: Option<String>,
-    download: String,
-    variants: Vec<CrosswordVariant>,
 }
 
 impl CrosswordMeta {
@@ -117,6 +118,7 @@ fn main() {
         .build()
         .unwrap();
     handlebars.register_templates_directory("../templates", dir_opts).unwrap();
+    handlebars_helper!(eq: |x: str, y: str| x == y);
 
     let data_file = File::open("../crosswords.yaml").unwrap();
     let mut crosswords: CrosswordData = serde_yaml::from_reader(data_file).unwrap();

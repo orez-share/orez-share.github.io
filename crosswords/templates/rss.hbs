@@ -7,7 +7,10 @@
     <language>en-us</language>
     {{#each crosswords}}
     <item>
-      <title>🫛 {{this.title}}</title>
+      <title>
+        {{~#each this.variants~}}
+          {{~#if (eq this "peapod")~}}🫛{{else if (eq this "looping")~}}🔁{{/if}}
+        {{~/each}} {{this.title}}</title>
       <link>{{this.play_link}}</link>
     </item>
     {{/each}}
