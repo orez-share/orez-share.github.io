@@ -63,3 +63,8 @@ crosswords:
     pub_date: "2026-04-25"
     download: prototype-bc60.ipuz
     variants: ["looping"]
+
+  - title: "Map of Utah"
+    pub_date: "2026-04-27"
+    download: utah.ipuz
+    variants: ["looping"]
