@@ -1,0 +1,83 @@
+{
+  "version": "http://ipuz.org/v1",
+  "kind": [
+    "http://ipuz.org/crossword#1",
+    "https://orez-share.github.io/crosswords/looping/format"
+  ],
+  "title": "🔁 Map of Utah",
+  "copyright": "",
+  "author": "Orez",
+  "notes": "",
+  "dimensions": {
+    "width": 15,
+    "height": 10
+  },
+  "viewport": {
+    "width": 9,
+    "height": 12
+  },
+  "tessellation": {"x": 6, "y": 8},
+  "block": "#",
+  "empty": 0,
+  "puzzle": [
+    [1,2,0,0,0,3,24,"#",25,0,0,26,27,0,0],
+    [0,0,"#",4,0,0,0,28,0,"#","#",29,0,0,"#"],
+    [0,0,"#","#",5,0,0,0,0,1,2,0,0,0,3],
+    ["#",6,7,8,"#",9,0,0,0,0,0,"#",4,0,0],
+    ["#",10,0,0,11,0,"#",12,0,0,0,"#","#",5,0],
+    ["#","#",13,0,0,0,14,0,"#","#",6,7,8,"#",9],
+    [15,16,0,"#",17,0,0,0,"#","#",10,0,0,11,0],
+    [0,0,0,18,0,0,0,0,"#","#","#",13,0,0,0],
+    [0,0,"#",19,0,0,0,"#",20,15,16,0,"#",17,0],
+    ["#",21,22,0,0,"#","#",23,0,0,0,0,18,0,0]
+  ],
+  "solution": [
+    ["A","K","E","C","I","T","Y","#","S","E","E","D","B","O","M"],
+    ["T","H","#","H","E","R","E","S","Y","#","#","R","A","V","#"],
+    ["M","A","#","#","S","A","L","T","L","A","K","E","C","I","T"],
+    ["#","K","F","C","#","S","L","E","U","T","H","#","H","E","R"],
+    ["#","I","R","I","S","H","#","E","M","M","A","#","#","S","A"],
+    ["#","#","O","N","A","H","O","P","#","#","K","F","C","#","S"],
+    ["H","I","S","#","M","E","W","L","#","#","I","R","I","S","H"],
+    ["U","N","T","P","E","A","L","E","#","#","#","O","N","A","H"],
+    ["B","S","#","L","O","P","S","#","T","H","I","S","#","M","E"],
+    ["#","P","A","I","N","#","#","M","O","U","N","T","P","E","A"]
+  ],
+  "clues": {
+    "Across": [
+      [4, "Violation of religious code"],
+      [5, "Capital of Utah"],
+      [6, "Colonel Sanders's restaurant chain"],
+      [9, "Poirot or Holmes"],
+      [10, "Like Conan O'Brien, ethnically"],
+      [12, "Stone, Thompson or Watson"],
+      [13, "How some baseballs are fielded"],
+      [17, "Kitten cry"],
+      [19, "Hacks (off), as tree branches"],
+      [20, "\"I agree 100%\", in internet slang"],
+      [21, "Requisite for gain, it's said"],
+      [23, "Highest point in the La Sal Range"],
+      [25, "Guerrilla gardening tools"],
+      [29, "Rabbi, in Hebrew"]
+    ],
+    "Down": [
+      [1, "Drive-thru convenience at a bank: abbr."],
+      [2, "Color for safari clothes"],
+      [3, "Landfill, essentially"],
+      [7, "Robert ___ (1874-1963), US poet"],
+      [8, "Ohio's Reds, on a scoreboard"],
+      [11, "Identical item"],
+      [14, "Rodent catchers of the dark hours"],
+      [15, "Central part of wheel"],
+      [16, "___. Clouseau in \"The Pink Panther\""],
+      [18, "Ballerina's bend"],
+      [20, " ___ yum (hot-and-sour Thai soup)"],
+      [22, "A refuge from bedlam"],
+      [23, "Cinema presentations"],
+      [24, "SPEAK LIKE THIS"],
+      [26, "Dr. of rap"],
+      [27, "Great German composer"],
+      [28, "High point of religion?"]
+    ]
+  }
+}
