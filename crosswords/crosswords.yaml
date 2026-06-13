@@ -2,7 +2,7 @@ crosswords:
   - title: Pair Off
     pub_date: "2023-08-13"
     mirror: "https://www.crosswithfriends.com/beta/play/100003203"
-    download: "Pair Off.puz"
+    download: "PairOff.ipuz"
     variants: ["peapod"]
 
   - title: Themeless Peapod 1
@@ -14,13 +14,13 @@ crosswords:
   - title: A Bug's Life
     pub_date: "2026-01-25"
     mirror: "https://www.crosswithfriends.com/beta/play/100003610"
-    download: "A Bugs Life.puz"
+    download: "ABugsLife.ipuz"
     variants: ["peapod"]
 
   - title: Twinst
     pub_date: "2026-01-27"
     mirror: "https://www.crosswithfriends.com/beta/play/100003701"
-    download: Twinst.puz
+    download: Twinst.ipuz
     variants: ["peapod"]
 
   - title: You Are Here!
