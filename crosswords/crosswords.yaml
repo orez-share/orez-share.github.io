@@ -68,3 +68,13 @@ crosswords:
     pub_date: "2026-04-27"
     download: utah.ipuz
     variants: ["looping"]
+
+  - title: "👀"
+    pub_date: "2026-10-04"
+    download: eyes.ipuz
+    variants: ["peapod"]
+
+  - title: "80 Days"
+    pub_date: "2026-10-04"
+    download: 80days.ipuz
+    variants: ["looping"]
