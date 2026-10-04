@@ -6,6 +6,10 @@
     <description>Feed of peapod crosswords: crosswords where each cell contains a 2-letter rebus. Updates sporadically!</description>
     <language>en-us</language>
     <item>
+      <title>🫛 👀</title>
+      <link>https://orez-share.github.io/crosswords/play/#/eyes</link>
+    </item>
+    <item>
       <title>🫛 Threepod (April Fools!)</title>
       <link>https://orez-share.github.io/crosswords/play/#/Threepod</link>
     </item>
