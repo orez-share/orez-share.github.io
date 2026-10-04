@@ -6,6 +6,10 @@
     <description>Feed of crosswords and crossword variants. Updates sporadically!</description>
     <language>en-us</language>
     <item>
+      <title>🔁 80 Days</title>
+      <link>https://orez-share.github.io/crosswords/play/#/80days</link>
+    </item>
+    <item>
       <title>🫛 👀</title>
       <link>https://orez-share.github.io/crosswords/play/#/eyes</link>
     </item>
